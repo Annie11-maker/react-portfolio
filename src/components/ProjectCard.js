@@ -1,4 +1,4 @@
-export default function ProjectCard({ title, description, link }: { title: string; description: string; link: string }) {
+export default function ProjectCard({ title, description, link }) {
   return (
     <div className="border p-5 rounded-lg shadow-md bg-white">
       <h2 className="text-2xl font-bold">{title}</h2>

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import "./globals.css"; // Ensures Tailwind works
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-gray-100 text-gray-900">
