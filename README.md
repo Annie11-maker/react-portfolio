@@ -15,3 +15,14 @@ Welcome to my **React + Next.js Portfolio**! 🚀 This project showcases my skil
 - **Projects Showcase**: A dedicated section to showcase my personal projects and contributions.
 - **About Me**: A section where you can learn more about my skills, experience, and background.
 - **Contact Me**: A section where potential employers or clients can get in touch with me.
+
+ ## 🔗 **Contact**
+
+Feel free to reach out if you'd like to collaborate or if you have any questions:
+
+- **LinkedIn**: [linkedin.com/in/annie](https://www.linkedin.com/in/annie)
+- **GitHub**: [github.com/Annie11-Maker](https://github.com/Annie11-Maker)
+
+---
+
+Thank you for checking out my portfolio! 😊
