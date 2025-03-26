@@ -20,7 +20,7 @@ Welcome to my **React + Next.js Portfolio**! 🚀 This project showcases my skil
 
 Feel free to reach out if you'd like to collaborate or if you have any questions:
 
-- **LinkedIn**: [linkedin.com/in/annie](https://www.linkedin.com/in/annie)
+- **LinkedIn**:[https://www.linkedin.com/in/annie](https://www.linkedin.com/in/annie-shouket/)
 - **GitHub**: [github.com/Annie11-Maker](https://github.com/Annie11-Maker)
 
 ---
