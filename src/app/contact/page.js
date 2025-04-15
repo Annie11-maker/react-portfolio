@@ -2,10 +2,10 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold">Contact Me</h1>
-      <p className="mt-4">
+      <p className="mt-4 text-orange-200">
         If you’d like to connect, discuss potential collaborations, or simply have a conversation, feel free to reach out to me. I’d be happy to hear from you!
       </p>
-      <p className="mt-4">Email: <a href="mailto:quratulainshouket11@gmail.com" className="text-blue-400 font-semibold">quratulainshouket11@gmail.com</a></p>
+      <p className="mt-4 text-orange-200">Email: <a href="mailto:quratulainshouket11@gmail.com" className="text-orange-500 font-semibold">quratulainshouket11@gmail.com</a></p>
     </div>
   );
 }
