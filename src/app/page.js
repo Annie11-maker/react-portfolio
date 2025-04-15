@@ -19,9 +19,14 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
+      {/* Yellow strip */}
+      <div className="yellow-strip">
+        React | Tailwind CSS | JavaScript | Ruby on Rails | C++
+      </div>
+
       <div className="max-w-2xl relative">
         <h1
-          className="text-5xl md:text-7xl font-extrabold drop-shadow-lg transform transition duration-500 hover:scale-130 relative"
+          className="text-5xl md:text-7xl font-extrabold drop-shadow-lg transform transition duration-500 hover:scale-120 relative"
           onMouseEnter={handleHover}
         >
           Annie

@@ -28,3 +28,31 @@ body {
   animation: firework 700ms ease-out forwards;
   pointer-events: none;
 }
+
+.yellow-strip {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #FFDD00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  z-index: 9999;
+  animation: moveDiagonal 30s linear infinite;
+}
+
+@keyframes moveDiagonal {
+  0% {
+    transform: rotate(-45deg) translateX(-100vw);
+  }
+  50% {
+    transform: rotate(-45deg) translateX(100vw);
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-100vw);
+  }
+}
