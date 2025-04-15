@@ -1,58 +1,57 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* Tailwind CSS framework */
 
 html, body {
-  min-height: 100%;
-  background: linear-gradient(to right, #030303, #2a2a2b, #0c0c0c);
+  min-height: 100%; /* Ensures the body takes up the full height of the viewport */
+  background: linear-gradient(to right, #030303, #2a2a2b, #0c0c0c); /* Dark gradient background from left to right */
 }
 
 body {
-  color: rgba(255, 68, 0, 0.938);
+  color: rgba(255, 68, 0, 0.938); /* text color */
 }
 
+/* Firework animation keyframes */
 @keyframes firework {
   0% {
-    opacity: 1;
-    transform: scale(0) translate(-50%, -50%);
+    opacity: 1; /* Starts with full opacity */
+    transform: scale(0) translate(-50%, -50%); /* Starts at a scale of 0, centered */
   }
   100% {
-    opacity: 0;
-    transform: scale(3.5) translate(-50%, -50%);
+    opacity: 0; /* Fades out at the end */
+    transform: scale(3.5) translate(-50%, -50%); /* Expands to 3.5x the original size */
   }
 }
 
 .firework {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 9999px;
-  animation: firework 700ms ease-out forwards;
-  pointer-events: none;
-}
-
-.yellow-strip {
-  position: fixed;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #FFDD00;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  transform: rotate(-45deg);
-  transform-origin: center;
-  z-index: 9999;
-  animation: moveDiagonal 30s linear infinite;
+  position: absolute; /* Absolutely positioned so it can appear anywhere on the screen */
+  width: 8px; /* Small circle size */
+  height: 8px; /* Small circle size */
+  border-radius: 9999px; /* Makes the firework a circle */
+  animation: firework 700ms ease-out forwards; /* Applies the firework animation for 700ms with easing */
+  pointer-events: none; /* Ensures that the fireworks do not block other interactive elements */
 }
 
 @keyframes moveDiagonal {
   0% {
-    transform: rotate(-45deg) translateX(-100vw);
-  }
-  50% {
-    transform: rotate(-45deg) translateX(100vw);
+    transform: rotate(-45deg) translateX(-100vw); /* Starts offscreen to the left, rotated -45deg */
   }
   100% {
-    transform: rotate(-45deg) translateX(-100vw);
+    transform: rotate(-45deg) translateX(100vw); /* Moves across the screen to the right, offscreen */
   }
+}
+
+.yellow-strip {
+  position: fixed; /* Fixed positioning keeps it in place while scrolling */
+  top: 10%; /* Positions the strip 10% from the top of the screen */
+  left: 0; /* Starts at the left edge of the screen */
+  width: 100%; /* Ensures it spans the entire width of the screen */
+  padding: 0.5rem; /* Adds padding for some space around the text */
+  background-color: #FFDD00; /* Yellow background color */
+  color: #000; /* Black text color */
+  font-size: 1.5rem; /* Larger text size */
+  font-weight: bold;
+  text-align: center; /* Centers the text horizontally */
+  transform: rotate(-45deg); /* Rotates the strip to a 45-degree angle */
+  transform-origin: center; /* Ensures the rotation happens around the center of the strip */
+  z-index: 9999; /* Ensures the strip is on top of other elements */
+  animation: moveDiagonal 20s linear infinite; /* Applies diagonal movement with a 20s duration for slow movement */
 }
