@@ -29,29 +29,3 @@ body {
   animation: firework 700ms ease-out forwards; /* Applies the firework animation for 700ms with easing */
   pointer-events: none; /* Ensures that the fireworks do not block other interactive elements */
 }
-
-@keyframes moveDiagonal {
-  0% {
-    transform: rotate(-45deg) translateX(-100vw); /* Starts offscreen to the left, rotated -45deg */
-  }
-  100% {
-    transform: rotate(-45deg) translateX(100vw); /* Moves across the screen to the right, offscreen */
-  }
-}
-
-.yellow-strip {
-  position: fixed; /* Fixed positioning keeps it in place while scrolling */
-  top: 10%; /* Positions the strip 10% from the top of the screen */
-  left: 0; /* Starts at the left edge of the screen */
-  width: 100%; /* Ensures it spans the entire width of the screen */
-  padding: 0.5rem; /* Adds padding for some space around the text */
-  background-color: #FFDD00; /* Yellow background color */
-  color: #000; /* Black text color */
-  font-size: 1.5rem; /* Larger text size */
-  font-weight: bold;
-  text-align: center; /* Centers the text horizontally */
-  transform: rotate(-45deg); /* Rotates the strip to a 45-degree angle */
-  transform-origin: center; /* Ensures the rotation happens around the center of the strip */
-  z-index: 9999; /* Ensures the strip is on top of other elements */
-  animation: moveDiagonal 20s linear infinite; /* Applies diagonal movement with a 20s duration for slow movement */
-}
